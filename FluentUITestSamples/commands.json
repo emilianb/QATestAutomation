@@ -1,0 +1,14 @@
+{
+  "commands": {
+    "run-tests": {
+      "fileName": "powershell.exe",
+      "workingDirectory": ".",
+      "arguments": "-ExecutionPolicy Bypass -NonInteractive -File Task\\run-tests.ps1"
+    },
+    "generate-documentation": {
+      "fileName": "powershell.exe",
+      "workingDirectory": ".",
+      "arguments": "-ExecutionPolicy Bypass -NonInteractive -File Task\\generate-documentation.ps1"
+    }
+  }
+}
