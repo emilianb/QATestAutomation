@@ -78,8 +78,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.When("I search for author \"Emilian Balanescu\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("the first result on the screen shoul be \"Beginning PHP and PostgreSQL E-Commerce:" +
-                    " From Novice to Professional (Beginning, from Novice to Professional)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the first result on the screen should be \"Beginning PHP and PostgreSQL E-Commerce" +
+                    ": From Novice to Professional (Beginning, from Novice to Professional)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

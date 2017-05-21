@@ -5,6 +5,6 @@ $PackagesDir = "$ProjectDir\..\packages"
 
 $NUnit = "$PackagesDir\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe"
 
-$UITestSamples = (Get-ChildItem $SourceDir -Recurse -Include TestSamples.dll)
+$UITestSamples = (Get-ChildItem $SourceDir -Recurse -Include UITestSamples.dll)
 
-& $NUnit --framework:net-4.5 --result:$OutputDir\UITestSamples.nunit.xml  $UITestSamples
+& $NUnit --framework:net-4.5 --result:$OutputDir\UITestSamples.nunit.xml $UITestSamples

@@ -51,8 +51,8 @@ jsonPWrapper ({
               "@addition"
             ],
             "Result": {
-              "WasExecuted": false,
-              "WasSuccessful": false
+              "WasExecuted": true,
+              "WasSuccessful": true
             }
           },
           {
@@ -127,8 +127,8 @@ jsonPWrapper ({
             ],
             "Tags": [],
             "Result": {
-              "WasExecuted": false,
-              "WasSuccessful": false
+              "WasExecuted": true,
+              "WasSuccessful": true
             }
           }
         ],
@@ -151,14 +151,14 @@ jsonPWrapper ({
           }
         },
         "Result": {
-          "WasExecuted": false,
-          "WasSuccessful": false
+          "WasExecuted": true,
+          "WasSuccessful": true
         },
         "Tags": []
       },
       "Result": {
-        "WasExecuted": false,
-        "WasSuccessful": false
+        "WasExecuted": true,
+        "WasSuccessful": true
       }
     },
     {
@@ -241,8 +241,8 @@ jsonPWrapper ({
               "@subtraction"
             ],
             "Result": {
-              "WasExecuted": false,
-              "WasSuccessful": false
+              "WasExecuted": true,
+              "WasSuccessful": true
             }
           }
         ],
@@ -265,14 +265,14 @@ jsonPWrapper ({
           }
         },
         "Result": {
-          "WasExecuted": false,
-          "WasSuccessful": false
+          "WasExecuted": true,
+          "WasSuccessful": true
         },
         "Tags": []
       },
       "Result": {
-        "WasExecuted": false,
-        "WasSuccessful": false
+        "WasExecuted": true,
+        "WasSuccessful": true
       }
     }
   ],
@@ -281,32 +281,32 @@ jsonPWrapper ({
       {
         "Tag": "@addition",
         "Total": 1,
-        "Passing": 0,
+        "Passing": 1,
         "Failing": 0,
-        "Inconclusive": 1
+        "Inconclusive": 0
       },
       {
         "Tag": "@subtraction",
         "Total": 1,
-        "Passing": 0,
+        "Passing": 1,
         "Failing": 0,
-        "Inconclusive": 1
+        "Inconclusive": 0
       }
     ],
     "Folders": [
       {
         "Folder": "CalculateAdditionOperations.feature",
         "Total": 2,
-        "Passing": 0,
+        "Passing": 2,
         "Failing": 0,
-        "Inconclusive": 2
+        "Inconclusive": 0
       },
       {
         "Folder": "CalculateArithmeticExpressions.feature",
         "Total": 1,
-        "Passing": 0,
+        "Passing": 1,
         "Failing": 0,
-        "Inconclusive": 1
+        "Inconclusive": 0
       }
     ],
     "NotTestedFolders": [
@@ -327,18 +327,18 @@ jsonPWrapper ({
     ],
     "Scenarios": {
       "Total": 3,
-      "Passing": 0,
+      "Passing": 3,
       "Failing": 0,
-      "Inconclusive": 3
+      "Inconclusive": 0
     },
     "Features": {
       "Total": 2,
-      "Passing": 0,
+      "Passing": 2,
       "Failing": 0,
-      "Inconclusive": 2
+      "Inconclusive": 0
     }
   },
   "Configuration": {
-    "GeneratedOn": "18 May 2017 03:30:27"
+    "GeneratedOn": "21 May 2017 19:07:27"
   }
 });

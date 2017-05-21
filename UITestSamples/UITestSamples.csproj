@@ -76,6 +76,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SearchForBooks.feature</DependentUpon>
     </Compile>
+    <Compile Include="StepDefinition\SearchStepDefinition.cs" />
     <Compile Include="UnitTest\AmazonSearchTest.cs" />
     <Compile Include="Hook\BrowserHook.cs" />
     <Compile Include="Page\HomePage.cs" />
@@ -93,10 +94,7 @@
     <None Include="Task\generate-documentation.ps1" />
     <None Include="Task\run-tests.ps1" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Documentation\" />
-    <Folder Include="TestResult\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
@@ -105,6 +103,33 @@
       <Link>chromedriver.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Documentation\css\bootstrap.min.css" />
+    <Content Include="Documentation\css\print.css" />
+    <Content Include="Documentation\css\styles.css" />
+    <Content Include="Documentation\img\glyphicons-halflings-white.png" />
+    <Content Include="Documentation\img\glyphicons-halflings.png" />
+    <Content Include="Documentation\img\link.png" />
+    <Content Include="Documentation\Index.html" />
+    <Content Include="Documentation\js\bootstrap.min.js" />
+    <Content Include="Documentation\js\Chart.min.js" />
+    <Content Include="Documentation\js\Chart.StackedBar.js" />
+    <Content Include="Documentation\js\featureSearch.js" />
+    <Content Include="Documentation\js\featuresModel.js" />
+    <Content Include="Documentation\js\heirarchyBuilder.js" />
+    <Content Include="Documentation\js\html5.js" />
+    <Content Include="Documentation\js\jquery-1.8.3.min.js" />
+    <Content Include="Documentation\js\jquery.highlight-4.closure.js" />
+    <Content Include="Documentation\js\knockout-3.4.0.js" />
+    <Content Include="Documentation\js\knockout.mapping-latest.js" />
+    <Content Include="Documentation\js\logger.js" />
+    <Content Include="Documentation\js\Markdown.Converter.js" />
+    <Content Include="Documentation\js\Markdown.Extra.js" />
+    <Content Include="Documentation\js\picklesOverview.js" />
+    <Content Include="Documentation\js\stringFormatting.js" />
+    <Content Include="Documentation\js\typeaheadList.js" />
+    <Content Include="Documentation\js\underscore-min.js" />
+    <Content Include="Documentation\pickledFeatures.js" />
+    <Content Include="TestResult\UITestSamples.nunit.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

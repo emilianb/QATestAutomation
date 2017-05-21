@@ -5,6 +5,7 @@
     using System;
     using TechTalk.SpecFlow;
 
+    [Binding]
     public static class BrowserHook
     {
         [BeforeScenario]

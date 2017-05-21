@@ -19,7 +19,7 @@ namespace FluentUITestSamples.Specification
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Search for books")]
-    public partial class SearchForBooksFeature
+    public partial class SearchForBooksFeature : FluentAutomation.FluentTest
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -30,7 +30,7 @@ namespace FluentUITestSamples.Specification
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
-            testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
+            testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Search for books", "\tIn order to find quickly books of favorite authors\r\n\tAs a cusmtomer\r\n\tI want to " +
                     "be able to see books list for a certain author", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
@@ -57,6 +57,7 @@ namespace FluentUITestSamples.Specification
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
+            ScenarioContext.Current[ScenarioContext.Current.ScenarioInfo.Title] = this;
         }
         
         public virtual void ScenarioCleanup()
@@ -78,8 +79,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.When("I search for author \"Emilian Balanescu\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("the first result on the screen shoul be \"Beginning PHP and PostgreSQL E-Commerce:" +
-                    " From Novice to Professional (Beginning, from Novice to Professional)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the first result on the screen should be \"Beginning PHP and PostgreSQL E-Commerce" +
+                    ": From Novice to Professional (Beginning, from Novice to Professional)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

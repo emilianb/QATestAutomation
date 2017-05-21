@@ -9,4 +9,4 @@ Scenario: Search for books by author
 
 	When I search for author "Emilian Balanescu"
 
-	Then the first result on the screen shoul be "Beginning PHP and PostgreSQL E-Commerce: From Novice to Professional (Beginning, from Novice to Professional)"
+	Then the first result on the screen should be "Beginning PHP and PostgreSQL E-Commerce: From Novice to Professional (Beginning, from Novice to Professional)"

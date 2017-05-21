@@ -1,7 +1,5 @@
 ﻿namespace TestSamples.StepArgumentTransformation
 {
-    using Microsoft.VisualBasic;
-    using System.Linq;
     using TechTalk.SpecFlow;
 
     [Binding]

@@ -20,7 +20,7 @@
         }
 
         [FindsBy(How= How.CssSelector, Using= "h2[data-attribute]")]
-        public List<IWebElement> SearchResultHeadings { get; set; }
+        public IList<IWebElement> SearchResultHeadings { get; set; }
 
         public void ValidateFirstResultHeading(string expectedHeadingText)
         {

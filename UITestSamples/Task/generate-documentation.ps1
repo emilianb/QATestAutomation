@@ -6,4 +6,4 @@ $PackagesDir = "$ProjectDir\..\packages"
 
 $Pickles = "$PackagesDir\Pickles.CommandLine.2.15.0\tools\pickles.exe"
 
-& $Pickles --feature-directory:$FeatureDir --output-directory:$OutputDir --link-results-file:$LinkResultsDir\UITestSamples.nunit.xml --documentation-format=dhtml
+& $Pickles --feature-directory:$FeatureDir --output-directory:$OutputDir --link-results-file:$LinkResultsDir\UITestSamples.nunit.xml --test-results-format=nunit3 --documentation-format=dhtml
